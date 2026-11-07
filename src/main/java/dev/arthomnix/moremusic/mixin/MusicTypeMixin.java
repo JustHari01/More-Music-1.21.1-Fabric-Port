@@ -3,7 +3,7 @@ package dev.arthomnix.moremusic.mixin;
 import dev.arthomnix.moremusic.MoreMusicPreLaunchEntryPoint;
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
-import net.minecraft.client.sound.MusicType;
+import net.minecraft.sound.MusicType;
 import net.minecraft.registry.entry.RegistryEntry;
 import net.minecraft.sound.MusicSound;
 import net.minecraft.sound.SoundEvent;

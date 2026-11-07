@@ -3,25 +3,18 @@
   "id": "moremusic",
   "version": "${version}",
   "name": "More Music",
-  "description": "Make Minecraft's music play the whole time",
-  "authors": [
-    {
-      "name": "arthomnix",
-      "contact": {
-        "homepage": "https://github.com/arthomnix"
-      }
-    }
-  ],
+  "description": "Unofficial Fabric 1.21.1 port of More Music by arthomnix.",
+  "authors": ["arthomnix", "JustHari01"],
   "contact": {
     "homepage": "https://modrinth.com/mod/moremusic",
-    "issues": "https://github.com/arthomnix/moremusic/issues",
-    "sources": "https://github.com/arthomnix/moremusic"
+    "sources": "https://github.com/JustHari01/More-Music-1.21.1-Fabric-Port",
+    "issues": "https://github.com/JustHari01/More-Music-1.21.1-Fabric-Port/issues"
   },
   "license": "MIT",
   "icon": "assets/moremusic/icon.png",
-  "environment": "*",
+  "environment": "client",
   "entrypoints": {
-    "main": ["dev.arthomnix.moremusic.MoreMusic"],
+    "client": ["dev.arthomnix.moremusic.MoreMusic"],
     "preLaunch": ["dev.arthomnix.moremusic.MoreMusicPreLaunchEntryPoint"],
     "modmenu": ["dev.arthomnix.moremusic.config.MoreMusicModMenuIntegration"]
   },
@@ -29,12 +22,12 @@
     "moremusic.mixins.json"
   ],
   "depends": {
-    "fabricloader": ">=0.14",
+    "fabricloader": ">=0.16.14",
     "fabric-api": "*",
-    "minecraft": "1.20.2",
-    "cloth-config": ">=12.0"
+    "minecraft": "1.21.1",
+    "cloth-config": ">=15.0.140"
   },
   "suggests": {
-    "modmenu": ">=8.0.0"
+    "modmenu": ">=11.0.5"
   }
 }

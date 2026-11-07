@@ -2,7 +2,7 @@ package dev.arthomnix.moremusic;
 
 import dev.arthomnix.moremusic.config.MoreMusicConfig;
 import me.shedaniel.autoconfig.AutoConfig;
-import net.fabricmc.api.ModInitializer;
+import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.client.screen.v1.ScreenEvents;
 import net.fabricmc.fabric.api.client.screen.v1.Screens;
 import net.minecraft.client.gui.screen.option.SoundOptionsScreen;
@@ -12,9 +12,9 @@ import net.minecraft.text.Text;
 
 import java.util.List;
 
-public class MoreMusic implements ModInitializer {
+public class MoreMusic implements ClientModInitializer {
     @Override
-    public void onInitialize() {
+    public void onInitializeClient() {
         ScreenEvents.AFTER_INIT.register(((client, screen, scaledWidth, scaledHeight) -> {
             if (screen instanceof SoundOptionsScreen) {
                 List<ClickableWidget> buttons = Screens.getButtons(screen);
